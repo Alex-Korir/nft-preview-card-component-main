@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;300;400;600&display=swap');
+
+/*
+font-family: 'Merriweather', serif;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Work Sans', sans-serif;
+font-family: 'Outfit', sans-serif;
+*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: hsl(217, 54%, 11%);
+}
+.container-2{
+    width: 280px;
+    color: hsl(0, 0%, 100%);
+    /*border: 1px solid white;*/
+    padding: 15px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.picha{
+    position: relative;
+    width: 250px;
+    
+}
+.picha img{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 16px;
+
+}
+.picha:hover::before{
+    content: url("images/icon-view.svg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: hsla(178, 100%, 50%, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 3;
+}
+   
+.head h2{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 16px;
+}
+.head h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+.head p{
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 16px;
+    line-height: 17px;
+    color: hsl(215, 51%, 70%);
+}
+.view{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.img1, .img2{
+    display: flex;
+}
+.img1, img,
+.img2, img{
+    margin-right: 5px;
+}
+.img1, h4{
+    color: hsl(178, 100%, 50%);
+}
+.img2 > h4{
+    color: hsl(215, 51%, 70%);
+    font-weight: 100;
+}
+.line{
+    width: 100%;
+    border: none;
+    border-top: 0.0001cm solid hsl(215, 51%, 70%);
+    margin-bottom: 16px;
+    opacity: 0.2;
+}
+.avatar{
+    display: flex;
+}
+.avatar img{
+    width: 30px;
+    border: 1px solid hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 18px;
+}
+.avatar p{
+    margin: auto 0;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
+    color: hsl(215, 51%, 70%);
+}
+.avatar p span{
+    color: hsl(0, 0%, 100%);
+}
+.avatar p span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media only screen and (max-width: 375px){
+    
+}
